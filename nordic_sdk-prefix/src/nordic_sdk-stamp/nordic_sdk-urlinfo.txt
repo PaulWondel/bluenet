@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://www.nordicsemi.com/-/media/Software-and-other-downloads/SDKs/nRF5/Binaries/nRF5SDK153059ac345.zip'
-tag='MD5=46a8c9cd4b5d7ee4c5142e8fae3444c4'
