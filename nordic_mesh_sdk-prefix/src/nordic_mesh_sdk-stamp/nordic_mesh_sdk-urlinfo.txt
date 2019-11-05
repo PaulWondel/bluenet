@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://www.nordicsemi.com/-/media/Software-and-other-downloads/sDKS/nRF5-SDK-for-Mesh/nrf5SDKforMeshv320src.zip'
+tag='MD5=29e813a85e209fd07837c4fd3c616178'

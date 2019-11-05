@@ -1,0 +1,13 @@
+# Target labels
+ jlink
+# Source files and their labels
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/jlink
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/jlink.rule
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/jlink-complete.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-install.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-mkdir.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-download.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-update.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-patch.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-configure.rule
+/home/gmprincep/gitfiles/bluenet/jlink-prefix/src/jlink-stamp/jlink-build.rule

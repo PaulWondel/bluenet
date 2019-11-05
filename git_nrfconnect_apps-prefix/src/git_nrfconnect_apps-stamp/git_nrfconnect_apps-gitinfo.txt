@@ -1,0 +1,3 @@
+repository='https://github.com/NordicSemiconductor/pc-nrfconnect-programmer'
+module=''
+tag=''

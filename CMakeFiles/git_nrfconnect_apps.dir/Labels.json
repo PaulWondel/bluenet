@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/git_nrfconnect_apps"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/git_nrfconnect_apps.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/git_nrfconnect_apps-complete.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-install.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-mkdir.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-download.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-update.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-patch.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-configure.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/git_nrfconnect_apps-prefix/src/git_nrfconnect_apps-stamp/git_nrfconnect_apps-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"git_nrfconnect_apps"
+		],
+		"name" : "git_nrfconnect_apps"
+	}
+}

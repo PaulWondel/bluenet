@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nrfjprog"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nrfjprog.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nrfjprog-complete.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-install.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-mkdir.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-download.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-update.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-patch.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-configure.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nrfjprog-prefix/src/nrfjprog-stamp/nrfjprog-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nrfjprog"
+		],
+		"name" : "nrfjprog"
+	}
+}
