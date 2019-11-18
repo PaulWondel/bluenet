@@ -24,6 +24,7 @@ extern "C" {
 //#define CROWNSTONE_REQUEST_OBSERVER_PRIO         0 // SoftDevice enable/disable requests.
 #define CROWNSTONE_STATE_OBSERVER_PRIO           0 // SoftDevice state events (enabled/disabled)
 #define CROWNSTONE_BLE_OBSERVER_PRIO             1 // BLE events: connection, scans, rssi
+#define CROWNSTONE_ARDUINO_OBSERVER_PRIO	 0 // Arduino event handler
 
 /**
  * Define handlers of events.
@@ -210,6 +211,19 @@ NRF_SDH_STATE_OBSERVER(m_crownstone_state_handler, CROWNSTONE_STATE_OBSERVER_PRI
 	.handler   = crownstone_sdh_state_evt_handler,
 	.p_context = NULL
 };
+
+
+/* Arduino handler function */
+void arduino_soc_evt_handler(uint32_t evt_id, void * p_context){
+
+	switch(evt_id){
+		case NRF_EVT_JUMP_TO_ARDUINO_SUCCES:
+		case NRF_EVT_JUMP_TO_ARDUINO_FAILED:
+	}
+}
+NRF_SDH_SOC_OBSERVER(m_arduino_handler,CROWNSTONE_ARDUINO_OBSERVER_PRIO,arduino_soc_evt_handler)
+
+
 
 #if BUILD_MESHING == 1
 // From: ble_softdevice_support.c
