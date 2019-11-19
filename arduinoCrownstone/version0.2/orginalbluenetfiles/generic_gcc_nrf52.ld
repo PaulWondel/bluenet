@@ -1,5 +1,4 @@
 /* Linker script to configure memory regions. */
-/* Modified for ARDUINO COMPATIBILITY */
 
 /* This is a slightly adjusted copy from the file: 
  *    $NRF5_DIR/config/nrf52832/armgcc/generic_gcc_nrf52.ld 
@@ -184,12 +183,6 @@ SECTIONS
     PROVIDE(__start_nrf_mesh_flash = .);
     KEEP(*(SORT(.nrf_mesh_flash.*)))
     PROVIDE(__stop_nrf_mesh_flash = .);
-  } > FLASH
-  .arduino_handler :
-  {
-    PROVIDE(__start_arduino_handler = .);
-    KEEP(*(SORT(.sdh_arduino_handler*)))
-    PROVIDE(__stop_arduino_handler = .);
   } > FLASH
 } INSERT AFTER .text
 

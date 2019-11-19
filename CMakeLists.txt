@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 3.10)
 # Set board target 
 #######################################################################################################################
 
-option(DOWNLOAD_JLINK                            "Download JLink"                        ON)
-option(DOWNLOAD_NRFUTIL                          "Download nrfutil"                      ON)
-option(DOWNLOAD_NRFJPROG                         "Download nrfjprog"                     ON)
+option(DOWNLOAD_JLINK                            "Download JLink"                        OFF)
+option(DOWNLOAD_NRFUTIL                          "Download nrfutil"                      OFF)
+option(DOWNLOAD_NRFJPROG                         "Download nrfjprog"                     OFF)
 option(DOWNLOAD_NRFCONNECT                       "Download nrfconnect"                   OFF)
 option(DOWNLOAD_NRFCONNECT_PROGRAMMER            "Download nrfconnect programmer"        OFF)
 
