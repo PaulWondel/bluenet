@@ -319,6 +319,7 @@ Type nr | Type name | Payload type | Description | A | M | B | S
 31 | Increase TX | - | Temporarily increase the TX power when in setup mode |  |  |  | x
 32 | Reset errors | [Error bitmask](#state_error_bitmask) | Reset all errors which are set in the written bitmask. | x
 33 | Mesh command | [Command mesh packet](#command_mesh_packet) | Send a generic command over the mesh. Required access depends on the command. Required access depends on the command. | x | x | x
+34 | Set sun times | [Set sun time packet](#set_sun_time_packet) | Update the reference times for sunrise and sunset | x | x | 
 40 | Allow dimming | uint 8 | Allow/disallow dimming, 0 = disallow, 1 = allow. | x
 41 | Lock switch | uint 8 | Lock/unlock switch, 0 = unlock, 1 = lock. | x
 50 | UART message | payload | Print the payload to UART. | x
@@ -380,6 +381,17 @@ Type | Name | Length | Description
 --- | --- | --- | ---
 uint 16  | [State type](#state_types) | 2 | Type of state.
 uint 8 | Payload | N | Payload data, depends on state type.
+
+
+<a name="set_sun_time_packet"></a>
+##### Set sun time packet
+
+![Set Sun Time Packet](../docs/diagrams/set_sun_time_packet.png)
+
+Type | Name | Length | Description
+--- | --- | --- | ---
+uint 32 | Sunrise | 4 | The moment when the upper limb of the sun appears on the horizon. Units: seconds since midnight.
+uint 32 | Sunset | 4 | The moment when the upper limb of the Sun disappears below the horizon. Units: seconds since midnight.
 
 
 <a name="multi_switch_packet"></a>
@@ -541,7 +553,7 @@ Type nr | Type name | Payload type | Description | A | M | B
 65 | Localization key | uint 8 [16] | 16 byte key used to encrypt/decrypt messages to tell your location to this Crownstone. |  |  | 
 66 | Start dimmer on zero crossing | uint 8 | Whether the dimmer should start on a zero crossing or not. | rw |  | 
 67 | Tap to toggle enabled | uint 8 | Whether tap to toggle is enabled on this Crownstone. | rw |  | 
-68 | Tap to toggle RSSI threshold | int 8 | RSSI threshold (after adjustment from the offset) above which tap to toggle will respond. | rw |  | 
+68 | Tap to toggle RSSI threshold offset | int 8 | RSSI threshold offset from default, above which tap to toggle will respond. | rw |  | 
 128 | Reset counter | uint 16 | Counts the number of resets. | r | r | 
 129 | [Switch state](#switch_state_packet) | uint 8 | Current switch state. | r | r | 
 130 | Accumulated energy | int 64 | Accumulated energy in μJ. | r | r | 
