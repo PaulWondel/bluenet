@@ -13,7 +13,10 @@ APPLICATION_LENGTH = DEFINED(APPLICATION_LENGTH) ? APPLICATION_LENGTH : 0x5A000;
 
 RAM_R1_BASE = DEFINED(RAM_R1_BASE) ? RAM_R1_BASE : 0x20002380;
 RAM_APPLICATION_AMOUNT = DEFINED(RAM_APPLICATION_AMOUNT) ? RAM_APPLICATION_AMOUNT : 0xDC80;
-
+/*
+MY_BASE = DEFINED(MY_BASE) ? MY_BASE : 0x90000;
+MY_BASE_SIZE = DEFINED(MY_BASE_SIZE) ? MY_BASE_SIZE : 0x04;
+*/
 /**
  * See S132_nrf52_6.0.0_release_notes.pdf.
  *
@@ -42,6 +45,7 @@ MEMORY
 {
   FLASH (rx) : ORIGIN = APPLICATION_START_ADDRESS, LENGTH = APPLICATION_LENGTH
   RAM (rwx) :  ORIGIN = RAM_R1_BASE, LENGTH = RAM_APPLICATION_AMOUNT
+/*  MY_MEMORY (rx) : ORIGIN = MY_BASE, LENGTH = MY_BASE_SIZE*/
   CORE_BL_RAM (rw) :     ORIGIN = 0x2000fd00, LENGTH = 0x300
   UICR_BOOTADDR (r) :    ORIGIN = 0x10001014, LENGTH = 0x04
   UICR_MBRPARAMADDR (r): ORIGIN = 0x10001018, LENGTH = 0x04
@@ -187,9 +191,13 @@ SECTIONS
   } > FLASH
   .arduino_handler :
   {
-    PROVIDE(__start_arduino_handler = .);
-    KEEP(*(SORT(.sdh_arduino_handler)*))
-    PROVIDE(__stop_arduino_handler = .);
+    __arduino_handler_size = 0x10;
+    __arduino_handler_start = .;
+    . = . + __arduino_handler_size;
+/*    PROVIDE(__start_arduino_handler = .);
+    KEEP(*(SORT(.arduino_handler)*))
+    PROVIDE(__stop_arduino_handler = .); */
+    __arduino_handler_end = .;
   } > FLASH
 } INSERT AFTER .text
 
