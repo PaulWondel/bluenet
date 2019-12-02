@@ -1,13 +1,10 @@
-#include <iostream> 
-using namespace std; 
-  
-int main(int argc, char** argv) 
-{ 
-    cout << "You have entered " << argc 
-         << " arguments:" << "\n"; 
-  
-    for (int i = 0; i < argc; ++i) 
-        cout << argv[i] << "\n"; 
-  
-    return 0; 
+#include <stdio.h>
+int main( int argc, const char* argv[] )
+{
+	int i;
+	
+	for( i = 0; i < 10; i++ ) 
+	{
+		printf( "Iteration %d\n", i );
+	}
 }
