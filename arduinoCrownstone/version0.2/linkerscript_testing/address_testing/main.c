@@ -30,7 +30,9 @@ int main(int argc, const char* argv[]) {
    func = &callback;
 
    // call function indirectly
-   size_t (*func)(int,int); //declaring a function pointer
+   // size_t (*func)(unsigned int, unsigned int); //declaring a function pointer
+   
+   // I need to print the type of the &callback
 
    return 0;
 }
