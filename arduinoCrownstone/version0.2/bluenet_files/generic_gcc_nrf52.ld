@@ -189,17 +189,17 @@ SECTIONS
     KEEP(*(SORT(.nrf_mesh_flash.*)))
     PROVIDE(__stop_nrf_mesh_flash = .);
   } > FLASH
-/*  .arduino_handler :
+  .arduino_handler :
   {
-    __arduino_handler_size = 0x10;
+    __arduino_handler_size = 0x04;
     __arduino_handler_start = .;
     . = . + __arduino_handler_size;
 /*    PROVIDE(__start_arduino_handler = .);
     KEEP(*(SORT(.arduino_handler)*))
-    PROVIDE(__stop_arduino_handler = .); * /
+    PROVIDE(__stop_arduino_handler = .); */
     __arduino_handler_end = .;
-  } > FLASH */
+  } > FLASH 
 } INSERT AFTER .text
 
 INCLUDE "nrf_common.ld"
-INCLUDE "arduino_handler.ld"
+/*INCLUDE "arduino_handler.ld"*/
