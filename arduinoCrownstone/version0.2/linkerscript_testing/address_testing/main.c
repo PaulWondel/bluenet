@@ -1,4 +1,5 @@
 #include <stdio.h>
+//#include <main.h>
 
 static size_t func; //variable to store function address into
 
@@ -11,8 +12,8 @@ int functionAddress(int x){
 }
 
 
-int main(int argc, const char* argv[]) {
-   
+//int main(int argc, const char* argv[]) {
+int main(){   
 	int var1;
 	int *p;
 	
