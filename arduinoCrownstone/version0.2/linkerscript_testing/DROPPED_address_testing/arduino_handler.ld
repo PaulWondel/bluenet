@@ -1,5 +1,5 @@
 OUTPUT_FORMAT(elf64-x86-64)/*elf32-i386)*/
-ENTRY(main)
+ENTRY(_start)
 OUTPUT(Test)
 
 SECTIONS
