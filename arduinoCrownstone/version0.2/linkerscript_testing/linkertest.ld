@@ -1,9 +1,11 @@
 SECTIONS
 {
-  . = 0x10000;
-  .text : { *(.text) }
-  . = 0x8000000;
-  .data : { *(.data) }
-  .bss : { *(.bss) }
+	.arduino_handler :
+	{
+		__arduino_handler_size = 0x10;
+		__arduino_handler_start = .;
+		. = . + __arduino_handler_size;
+		__arduino_handler_end = .;
+	}
 }
 

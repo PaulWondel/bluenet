@@ -63,6 +63,9 @@ LIST(APPEND FOLDER_SOURCE "${SOURCE_DIR}/util/cs_WireFormat.cpp")
 LIST(APPEND FOLDER_SOURCE "${SOURCE_DIR}/processing/cs_PowerSampling.cpp")
 LIST(APPEND FOLDER_SOURCE "${SOURCE_DIR}/processing/cs_MultiSwitchHandler.cpp")
 
+# The arduino handler specified to be compiled
+LIST(APPEND FOLDER_SOURCE "${SOURCE_DIR}/cs_ArduinoHandler.cpp")
+
 # should be only when creating iBeacon
 LIST(APPEND FOLDER_SOURCE "${SOURCE_DIR}/ble/cs_iBeacon.cpp")
 
