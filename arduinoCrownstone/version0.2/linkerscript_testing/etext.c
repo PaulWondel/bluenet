@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 
 // Initialize the variable in the arduino_handler section with address, 
 static unsigned char pling __attribute__((section("arduino_handler"))) = '!'; // variable in the section
@@ -43,6 +44,8 @@ int main(){
 	else{
 		printf("jumpToCallback: %p | func: %p\n",jumpToCallback,func);
 	}
-
+	
+	fMain();
+	
 	return 0;
 }
