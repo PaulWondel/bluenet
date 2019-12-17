@@ -8,7 +8,15 @@
 #include "extra.h"
 #include "nrf_log.h"
 
-
+/*
 void ARDUINO_HANDLER arduinoCommand(){
 	NRF_LOG_INFO("Arduino Command");
 }
+*/
+/*
+static void crownstoneCommand(const char value) {
+	NRF_LOG_INFO("Crownstone command %i", value);
+}
+
+REGISTER_ARDUINO_HANDLER(crownstoneCommand);
+*/
