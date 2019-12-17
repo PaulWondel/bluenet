@@ -8,6 +8,7 @@ MEMORY
 /*  FLASH (rx) : ORIGIN = 0x26000, LENGTH = 0x5a000 */
   FLASH (rx) : ORIGIN = 0x60000, LENGTH = 0x94000
   RAM (rwx) :  ORIGIN = 0x20001db8, LENGTH = 0xe248
+  ARDUINO (rx) : ORIGIN = 0x94000, LENGTH = 0x95000
 }
 
 SECTIONS
@@ -129,7 +130,7 @@ SECTIONS
     PROVIDE(__start_arduino_handlers = .);
     KEEP(*(SORT(.arduino_handlers*)))
     PROVIDE(__stop_arduino_handlers = .);
-  } > FLASH
+  } > ARDUINO
 
 
 } INSERT AFTER .text

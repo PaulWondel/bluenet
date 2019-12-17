@@ -44,6 +44,7 @@ MEMORY
   CORE_BL_RAM (rw) :     ORIGIN = 0x2000fd00, LENGTH = 0x300
   UICR_BOOTADDR (r) :    ORIGIN = 0x10001014, LENGTH = 0x04
   UICR_MBRPARAMADDR (r): ORIGIN = 0x10001018, LENGTH = 0x04
+  ARDUINO (rx) : ORIGIN = 0x94000, LENGTH = 0x95000
 }
 
 SECTIONS
@@ -189,7 +190,7 @@ SECTIONS
     PROVIDE(__start_arduino_handlers = .);
     KEEP(*(SORT(.arduino_handlers*)))
     PROVIDE(__stop_arduino_handlers = .);
-  } > FLASH
+  } > ARDUINO
 } INSERT AFTER .text
 
 INCLUDE "nrf_common.ld"

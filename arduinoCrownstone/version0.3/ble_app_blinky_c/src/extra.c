@@ -9,4 +9,6 @@
 #include "nrf_log.h"
 
 
-void ARDUINO_HANDLER arduinoCommand();
+void ARDUINO_HANDLER arduinoCommand(){
+	NRF_LOG_INFO("Arduino Command");
+}
