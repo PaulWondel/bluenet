@@ -66,7 +66,7 @@
 #include "nrf_log.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
-
+#include "extra.h"
 
 #define CENTRAL_SCANNING_LED            BSP_BOARD_LED_0                     /**< Scanning LED will be on when the device is scanning. */
 #define CENTRAL_CONNECTED_LED           BSP_BOARD_LED_1                     /**< Connected LED will be on when the device is connected. */
@@ -88,12 +88,12 @@
 #define APP_BLE_OBSERVER_PRIO           3                                   /**< Application's BLE observer priority. You shouldn't need to modify this value. */
 
 #ifdef ARDUINO
-//arduino_init_all();
-struct arduino_handler *iter = &__start_arduino_handlers;
-for (; iter < &__stop_arduino_handlers; ++iter) {
-	LOGd("Call handler %s", iter->name);
-	iter->f(8);
-}
+	//arduino_init_all();
+	struct arduino_handler *iter = &__start_arduino_handlers;
+	for (; iter < &__stop_arduino_handlers; ++iter) {
+		NRF_LOG_INFO("Call handler %s", iter->name);
+		iter->f(8);
+	}
 #endif
 
 NRF_BLE_SCAN_DEF(m_scan);                                       /**< Scanning module instance. */
@@ -508,7 +508,7 @@ static void idle_state_handle(void)
 }
 
 // Arduino command in other binary
-struct arduino_handler arduinoCommand;
+//struct arduino_handler arduinoCommand;
 //strcpy(void arduinoCommand.f, void arduinoCommand());
 //strcpy(arduinoCommand.name, "arduinoCommand()");
 
@@ -528,6 +528,7 @@ int main(void)
 
 	// Start execution.
 	NRF_LOG_INFO("Blinky CENTRAL example started.");
+	//arduino();
 	scan_start();
 
 	// Turn on the LED to signal scanning.

@@ -5,8 +5,8 @@ GROUP(-lgcc -lc -lnosys)
 
 MEMORY
 {
-/*  FLASH (rx) : ORIGIN = 0x26000, LENGTH = 0x5a000 */
-  FLASH (rx) : ORIGIN = 0x6a0000, LENGTH = 0x9e000
+  FLASH (rx) : ORIGIN = 0x26000, LENGTH = 0x59000
+/*  FLASH (rx) : ORIGIN = 0x6a000, LENGTH = 0x9e000*/
   RAM (rwx) :  ORIGIN = 0x20001db8, LENGTH = 0xe248
   ARDUINO (rx) : ORIGIN = 0x5A000, LENGTH = 0x5B000
 }
