@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_sdk"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_sdk.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_sdk-complete.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-install.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-mkdir.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-download.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-update.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-patch.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-configure.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_sdk-prefix/src/nordic_sdk-stamp/nordic_sdk-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nordic_sdk"
+		],
+		"name" : "nordic_sdk"
+	}
+}

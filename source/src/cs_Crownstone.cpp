@@ -138,16 +138,20 @@ Crownstone::Crownstone(boards_config_t& board) :
 		_temperatureGuard = &TemperatureGuard::getInstance();
 		_powerSampler = &PowerSampling::getInstance();
 	}
-
-#ifdef ARDUINO
+};
+void arduino(){
+//#ifdef ARDUINO
 	//arduino_init_all();
+	LOGi("Calling handler struct");
 	struct arduino_handler *iter = &__start_arduino_handlers;
 	for (; iter < &__stop_arduino_handlers; ++iter) {
 		LOGd("Call handler %s", iter->name);
 		iter->f(8);
 	}
-#endif
-};
+//#endif
+}
+
+//};
 
 /**
  * Initialize Crownstone firmware. First drivers are initialized (log modules, storage modules, ADC conversion,
@@ -1151,7 +1155,9 @@ int main() {
 //	}
 
 	Crownstone crownstone(board);
-
+	
+	arduino();
+	
 	overwrite_hardware_version();
 
 	// init drivers, configure(), create services and chars,

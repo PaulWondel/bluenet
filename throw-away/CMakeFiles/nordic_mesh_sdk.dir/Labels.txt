@@ -1,0 +1,13 @@
+# Target labels
+ nordic_mesh_sdk
+# Source files and their labels
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk.rule
+/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk-complete.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-install.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-mkdir.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-download.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-update.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-patch.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-configure.rule
+/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-build.rule

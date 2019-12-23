@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/CMakeFiles/nordic_mesh_sdk-complete.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-install.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-mkdir.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-download.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-update.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-patch.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-configure.rule"
+		},
+		{
+			"file" : "/home/gmprincep/gitfiles/bluenet/nordic_mesh_sdk-prefix/src/nordic_mesh_sdk-stamp/nordic_mesh_sdk-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nordic_mesh_sdk"
+		],
+		"name" : "nordic_mesh_sdk"
+	}
+}

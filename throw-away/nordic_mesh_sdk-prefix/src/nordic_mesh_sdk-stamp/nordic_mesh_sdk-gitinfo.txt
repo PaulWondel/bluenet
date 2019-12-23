@@ -1,0 +1,3 @@
+repository='https://github.com/crownstone/nRF5-SDK-for-Mesh'
+module=''
+tag=''
