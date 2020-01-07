@@ -12,8 +12,8 @@
 /** 
  * Arduino command.
  */
-static void arduinoCommand(const char value) {
+/*static void arduinoCommand(const char value) {
 	LOGd("Arduino command %i", value);
 }
-
-REGISTER_ARDUINO_HANDLER(arduinoCommand);
+*/
+//REGISTER_ARDUINO_HANDLER(arduinoCommand);

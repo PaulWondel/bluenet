@@ -381,7 +381,6 @@ ADD_CUSTOM_TARGET(write_board_version
   COMMAND make write_board_version
   WORKING_DIRECTORY ${BOARD_TARGET}
   DEPENDS 
-    nrfjprog
     bluenet
   COMMENT "Write board version"
   )
@@ -390,7 +389,6 @@ ADD_CUSTOM_TARGET(write_application
   COMMAND make write_application
   WORKING_DIRECTORY ${BOARD_TARGET}
   DEPENDS
-    nrfjprog
     bluenet
   COMMENT "Write application"
   )
