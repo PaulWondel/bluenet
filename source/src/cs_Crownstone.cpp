@@ -144,10 +144,11 @@ void arduino(){
 	//arduino_init_all();
 	LOGi("Calling handler struct");
 	struct arduino_handler *iter = &__start_arduino_handlers;
-	//for (; iter < &__stop_arduino_handlers; ++iter) {
-	for(; iter < &__start_arduino_handlers+1; ++iter) {
+	for (; iter < &__stop_arduino_handlers+1; ++iter) {
 		LOGd("Call handler %s", iter->name);
-		LOGd("Use Handler address %i", 448502);
+		//LOGd("Address handler: %p", iter);
+		//int result=iter->f(8);
+		LOGd("Execution handler result %x", iter->f(8));
 		iter->f(8);
 	}
 //#endif
