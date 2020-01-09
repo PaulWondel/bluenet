@@ -148,8 +148,11 @@ void arduino(){
 		LOGd("Call handler %s", iter->name);
 		//LOGd("Address handler: %p", iter);
 		//int result=iter->f(8);
-		LOGd("Execution handler result %x", iter->f(8));
-		iter->f(8);
+		LOGd("Execution handler case 1 %i", iter->f(1,5));
+		LOGd("Execution handler case 2 %i", iter->f(2,7));
+		LOGd("init() running %i", iter->f(3,3));
+		LOGd("loop() running %i", iter->f(0,4));
+		//iter->f(8);
 	}
 //#endif
 }
