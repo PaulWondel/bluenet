@@ -139,8 +139,9 @@ Crownstone::Crownstone(boards_config_t& board) :
 		_powerSampler = &PowerSampling::getInstance();
 	}
 };
-void arduino(){
-//#ifdef ARDUINO
+
+#ifdef ARDUINO
+void arduino(int x, int y){
 	//arduino_init_all();
 	LOGi("Calling handler struct");
 	struct arduino_handler *iter = &__start_arduino_handlers;
@@ -148,14 +149,14 @@ void arduino(){
 		LOGd("Call handler %s", iter->name);
 		//LOGd("Address handler: %p", iter);
 		//int result=iter->f(8);
-		LOGd("Execution handler case 1 %i", iter->f(1,5));
-		LOGd("Execution handler case 2 %i", iter->f(2,7));
-		LOGd("init() running %i", iter->f(3,3));
-		LOGd("loop() running %i", iter->f(0,4));
+		//LOGd("Execution handler case 1 %i", iter->f(1,5));
+		//LOGd("Execution handler case 2 %i", iter->f(2,7));
+		LOGd("init() running %i", iter->f(x));
+		LOGd("loop() running %i", iter->f(y));
 		//iter->f(8);
 	}
-//#endif
 }
+#endif
 
 //};
 
@@ -1162,7 +1163,7 @@ int main() {
 
 	Crownstone crownstone(board);
 	
-	arduino();
+	arduino(1,2);
 	
 	overwrite_hardware_version();
 

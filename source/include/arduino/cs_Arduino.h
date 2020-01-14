@@ -14,7 +14,8 @@ extern "C" {
 #include <drivers/cs_Serial.h>
 
 //typedef void (*arduino_func_t)(const char);
-typedef int (*arduino_func_t)(int,int);
+//typedef int (*arduino_func_t)(int,int);
+typedef int (*arduino_func_t)(int);
 
 struct arduino_handler {
 	arduino_func_t f;
