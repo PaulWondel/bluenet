@@ -1163,7 +1163,7 @@ int main() {
 
 	Crownstone crownstone(board);
 	
-	arduino(1,2);
+	arduino(0,0);
 	
 	overwrite_hardware_version();
 
