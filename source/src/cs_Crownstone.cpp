@@ -141,7 +141,7 @@ Crownstone::Crownstone(boards_config_t& board) :
 };
 
 #ifdef ARDUINO
-void arduino(int x, int y){
+void arduino(int option){
 	//arduino_init_all();
 	LOGi("Calling handler struct");
 	struct arduino_handler *iter = &__start_arduino_handlers;
@@ -151,9 +151,14 @@ void arduino(int x, int y){
 		//int result=iter->f(8);
 		//LOGd("Execution handler case 1 %i", iter->f(1,5));
 		//LOGd("Execution handler case 2 %i", iter->f(2,7));
-		LOGd("init() running %i", iter->f(x));
-		LOGd("loop() running %i", iter->f(y));
+		//LOGd("init() running %i", iter->f(x));
+		//LOGd("loop() running %i", iter->f(y));
 		//iter->f(8);
+		switch(option){
+			case 1: LOGd("init() running %i", iter->f(option)); break;
+			case 2: LOGd("loop() running %i", iter->f(option)); break;
+			default: LOGd("Incorrect option value"); break;
+		}
 	}
 }
 #endif
@@ -844,6 +849,11 @@ void Crownstone::tick() {
 	++_tickCount;
 
 	scheduleNextTick();
+	
+	//Call loop() for arduino loop()
+#if ARDUINO == 1
+	//arduino(2);
+#endif
 }
 
 void Crownstone::scheduleNextTick() {
@@ -1163,7 +1173,10 @@ int main() {
 
 	Crownstone crownstone(board);
 	
-	arduino(0,0);
+	// Call init() for arduino setup()
+#if ARDUINO == 1
+	arduino(1);
+#endif	
 	
 	overwrite_hardware_version();
 
