@@ -852,7 +852,7 @@ void Crownstone::tick() {
 	
 	//Call loop() for arduino loop()
 #if ARDUINO == 1
-	//arduino(2);
+	arduino(2);
 #endif
 }
 
